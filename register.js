@@ -19,6 +19,6 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     }
   } else {
     document.getElementById('regMessage').textContent = "Please fill in all fields.";
-    document.getElementById('regMessage').style.color = "red";
+    document.getElementById('regMessage').style.color = "green";
   }
 });
