@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   const username = document.getElementById('loginUsername').value;
   const password = document.getElementById('loginPassword').value;
   const loginMessageDiv = document.getElementById('loginMessage');
-  if (username === "test" && password === "123") {
+  if (username === "ken" && password === "123") {
     loginMessageDiv.textContent = "Login successful! Redirecting...";
     loginMessageDiv.style.color = "green";
     setTimeout(function() {
