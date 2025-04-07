@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Awesome Dashboard</title>
+  <title> Dashboard</title>
   <style>
     body {
       font-family: sans-serif;
@@ -9,61 +9,47 @@
       background-color: #f4f4f4;
     }
 
-    .dashboard-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Make boxes arrange nicely */
-      gap: 20px; /* Space between the boxes */
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      background: black;
+      padding: 10px;
     }
 
-    .dashboard-item {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    nav ul li {
+      margin: 0 15px;
     }
 
-    h2 {
-      margin-top: 0;
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+    }
+
+    nav ul li a:hover {
+      background: gray;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Your Dashboard!</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
   <div class="dashboard-container">
+    <h1>Welcome to Your Dashboard!</h1>
+
     <div class="dashboard-item">
       <h2>Quick Stats</h2>
       <p>Total Users: 150</p>
       <p>New Sign-ups Today: 12</p>
     </div>
 
-    <div class="dashboard-item">
-      <h2>Latest Activity</h2>
-      <ul>
-        <li>User A just logged in.</li>
-        <li>User B updated their profile.</li>
-        <li>New comment added by User C.</li>
-      </ul>
     </div>
-
-    <div class="dashboard-item">
-      <h2>Notifications</h2>
-      <p>You have 3 new messages!</p>
-    </div>
-
-    <div class="dashboard-item">
-      <h2>Your To-Do List</h2>
-      <ul>
-        <li>Finish homework</li>
-        <li>Read a book</li>
-        <li>Walk the dog</li>
-      </ul>
-    </div>
-  </div>
-
-  <script>
-    // This is where JavaScript magic would happen to update the data!
-    // For now, this is just a basic layout.
-  </script>
 </body>
 </html>
