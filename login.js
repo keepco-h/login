@@ -3,11 +3,15 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
   const username = document.getElementById('loginUsername').value;
   const password = document.getElementById('loginPassword').value;
-
-  if (username === "test" && password === "123") { // Example login
-    document.getElementById('loginMessage').textContent = "Login successful!";
+  const loginMessageDiv = document.getElementById('loginMessage');
+  if (username === "test" && password === "123") {
+    loginMessageDiv.textContent = "Login successful! Redirecting...";
+    loginMessageDiv.style.color = "green";
+    setTimeout(function() {
+      window.location.href = "dashboard.html"; 
+    }, 1500); 
   } else {
-    document.getElementById('loginMessage').textContent = "Incorrect username or password.";
-    document.getElementById('loginMessage').style.color = "red";
+    loginMessageDiv.textContent = "Incorrect username or password.";
+    loginMessageDiv.style.color = "red";
   }
 });
